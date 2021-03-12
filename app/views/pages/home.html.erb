@@ -1,4 +1,60 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render 'shared/logo' %>
 
-<p>yoyoyoo</p>
+<div id="navigation-links-container">
+  <%= link_to root_path, class: "main-button active" do %>
+    <p>HISTOIRE</p>
+    <div class="golden-div"></div>
+  <% end %>
+  <%= link_to champagnes_path, class: "main-button" do %>
+    <p>CHAMPAGNES</p>
+    <div class="golden-div"></div>
+  <% end %>
+  <%= link_to contact_path, class: "main-button" do %>
+    <p>CONTACT</p>
+    <div class="golden-div"></div>
+  <% end %>
+</div>
+
+<div id="main-image-carousel">
+</div>
+
+
+<section>
+  <div class="section-text">
+    <div class="title">UNE HISTOIRE DE FAMILLE</div>
+    <p>Champagne Demonge, c’est d’abord l’histoire d’une famille qui, depuis quatre générations, n’a eu de cesse de promouvoir et commercialiser des produits français à travers le monde.</p>
+    <p>L’histoire commence en 1912 quand Henri Lacontre descend le fleuve Sénégal pour faire du porte-à-porte dans les comptoirs africains. Véritable pionnier du Négoce, il passera sa vie à élargir son réseau commercial à l’ensemble de l’Afrique francophone en qualité d’agent spécial du SEITA pour la vente du tabac et des allumettes.</p>
+    <p>Son fils aîné, Pierre Lacontre, lui succède en 1978 et développe le portefeuille de l’agence auprès de grandes marques. En grand amateur de gastronomie et de bons vins, il étend naturellement l’activité au négoce des vins et spiritueux.</p>
+    <p>Après 10 ans d’expérience de terrain en Afrique de l’Ouest pour le compte de la société familiale, Olivier Lacontre reprend la tradition en 1991.</p>
+    <p>Animé par le même goût d’aventure que son grand-père Henri, il n’a de cesse de conquérir de nouveaux marchés et d’offrir de nouveaux produits à une cliente fidèle avec laquelle il a noué des liens étroits. Pour répondre à l’attente de ses clients, il décide d’élaborer un produit d’excellence et de tradition française : un Champagne. C’est la naissance en 2011 de Champagne Demonge.</p>
+    <p>L’histoire se poursuit aujourd’hui avec la quatrième génération de Lacontre qui perpétue avec la même expertise, la promotion et la distribution du Champagne Demonge, de vins et de spiritueux, auprès d’une clientèle toujours en quête de qualité.</p>
+  </div>
+  <div class="section-picture-container">
+    <div class="section-picture" style="background-image: url(<%= asset_path 'lake.jpg' %>)"></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-picture-container">
+    <div class="section-picture" style="background-image: url(<%= asset_path 'raisin.jpg' %>)"></div>
+  </div>
+  <div class="section-text">
+    <div class="title">LE CHAMPAGNE</div>
+    <p>
+      On a tendance à l’oublier, tant il est connu à travers le monde : le Champagne n’est pas une marque, c’est un vin d’Appellation d’Origine Contrôlée exclusivement produit en France, dans la région champenoise.
+      C’est un paysage de 34000 hectares à l’Est de Paris dont le relief de coteaux, les conditions climatiques et le sous-sol, offrent un terroir d’exception donnant aux vins de Champagne leur caractère unique.
+      En juillet 2015, l’UNESCO vote à l’unanimité l’inscription des « Coteaux, Maisons et Caves de Champagne » sur la liste de son Patrimoine Mondial consacrant ainsi l’identité de ce terroir et le savoir-faire ancestral du vigneron champenois.
+    </p>
+
+    <p>
+      A la fin de chaque été, sonne le temps des vendanges.
+      Les grappes entières sont récoltées à la main puis conduite au pressoir pour en extraire le jus en abimant le moins possible le fruit. Le moût est versé en cuve pour commencer sa fermentation alcoolique. Les sucres sont alors transformés en alcool par les levures en libérant le gaz carbonique. C’est l’origine de l’effervescence du Champagne.
+      La fermentation malolactique est ensuite réalisée pour adoucir l’acidité du vin et mûrir ses arômes, avant les étapes du soutirage et de la clarification.
+      Vient alors l’étape cruciale de l’assemblage qui joue avec la diversité des crus, des cépages et des années. Champagne Demonge Brut et Champagne Demonge Rosé sont le fruit d’un mariage harmonieux et équilibré entre les arômes et qualités spécifiques des trois seuls cépages champenois. Le Pinot Noir, aux arômes de fruits rouges, apporte du corps et de la puissance au vin. Le Pinot Meunier donne de la rondeur à l’assemblage. Enfin, le Chardonnay offre des arômes délicats et  une grande fraîcheur qui contribuent à la finesse du Champagne. Le Champagne Demonge Blanc de Blancs, exclusivement élaboré à partir de Chardonnay, en est l’une des plus élégantes expressions.
+    </p>
+  </div>
+</section>
+
+<div class="mentions-legales">
+
+</div>

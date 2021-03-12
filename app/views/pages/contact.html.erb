@@ -1,0 +1,16 @@
+<%= render 'shared/logo' %>
+
+<div id="navigation-links-container">
+  <%= link_to root_path, class: "main-button" do %>
+    <p>HISTOIRE</p>
+    <div class="golden-div"></div>
+  <% end %>
+  <%= link_to champagnes_path, class: "main-button" do %>
+    <p>CHAMPAGNES</p>
+    <div class="golden-div"></div>
+  <% end %>
+  <%= link_to contact_path, class: "main-button active" do %>
+    <p>CONTACT</p>
+    <div class="golden-div"></div>
+  <% end %>
+</div>

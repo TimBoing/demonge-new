@@ -1,1 +1,105 @@
 // Specific CSS for your home-page
+
+#logo-container{
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    height: 100%;
+  }
+}
+
+#navigation-links-container{
+
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .main-button{
+    color: rgba(0,0,0,0.7);
+    position: relative;
+
+    .golden-div{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1px;
+      background-color: $golden;
+      transition: all 1s;
+    }
+
+    &.active{
+
+      .golden-div{
+        width: 100%;
+      }
+
+    }
+  }
+
+  a{
+    text-decoration: none;
+
+    // color: black;
+    // color: $golden;
+    font-size: 1em;
+  }
+}
+
+#main-image-carousel{
+  height: 40vh;
+  background-image: url(image_path("landscape1.jpg"));
+  // background-image: url(image_path("rose.png"));
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section{
+
+  width: 100%;
+  display: flex;
+  margin-top: 10vh;
+
+  .section-text{
+    width: 50%;
+    padding: 0 10%;
+
+    p{
+      text-align: justify;
+    }
+
+    .title{
+      color: $golden;
+      font-size: 2em;
+      margin-bottom: 1em ;
+    }
+  }
+
+  .section-picture-container{
+    width: 50%;
+    padding: 0 5%;
+
+    .section-picture{
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+
+}
+
+.mentions-legales{
+  height: 30vh;
+  background-color: #E9EBEC;
+  margin-top: 10vh;
+  // background-color: $light-gray;
+}
