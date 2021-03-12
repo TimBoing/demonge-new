@@ -155,8 +155,25 @@ section{
 }
 
 .mentions-legales{
-  height: 30vh;
-  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  color: rgba(0,0,0,0.7);
+  p{
+    width: 20%;
+    text-align: center;
+    border-bottom: 1px solid $golden;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+
+    span {
+        background:#fff;
+        padding:0 10px;
+    }
+
+  }
+  // background-color: rgba(0,0,0,0.5);
   // margin-top: 10vh;
   // background-color: $light-gray;
 }
