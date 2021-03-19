@@ -16,12 +16,68 @@
 </div>
 
 
-<%= simple_form_for @site_contact do |f| %>
-  <%= f.input :name, label: false, placeholder: "Nom" %>
-  <%= f.input :address, label: false, placeholder: "Adresse" %>
-  <%= f.input :email, label: false, placeholder: "Email" %>
-  <%= f.input :tel, label: false, placeholder: "Téléphone" %>
-  <%= f.input :subject, label: false, placeholder: "Objet" %>
-  <%= f.input :message, as: :text, label: false, placeholder: "Message" %>
-  <%= f.button :submit, "Envoyer", class: "btn-dark" %>
-<% end %>
+<!-- <section  class="gray">
+  <table>
+    <tr>
+      <td class="t-icon"><i class="fas fa-map-marker-alt"></i></td>
+      <td><p>LACONTRE FS, 10 rue Ducassou, 33310 Lormont, France</p></td>
+    </tr>
+    <tr>
+      <td class="t-icon"><i class="far fa-envelope"></i></td>
+      <td><p>info@champagne-demonge.fr</p></td>
+    </tr>
+  </table>
+
+</section> -->
+
+<section id="contact-section" class ="gray" >
+  <!-- <div class="title">CONTACTEZ NOUS</div> -->
+
+  <div class="contact-and-map-container">
+    <div class="contact-formular">
+      <%= simple_form_for @site_contact do |f| %>
+        <%= f.input :name, label: false, placeholder: "Nom" %>
+        <%= f.input :address, label: false, placeholder: "Adresse" %>
+        <%= f.input :email, label: false, placeholder: "Email" %>
+        <%= f.input :tel, label: false, placeholder: "Téléphone" %>
+        <%= f.input :subject, label: false, placeholder: "Objet" %>
+        <%= f.input :message, as: :text, label: false, placeholder: "Message" %>
+        <%= f.button :submit, "Envoyer", class: "btn-dark" %>
+      <% end %>
+    </div>
+
+    <div class="map-container" id="map-container">
+       <div
+        id="map"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+        data-image-url="<%= asset_url("logo.png") %>"
+      >
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="contact-info-section">
+
+  <div id="adresse">
+    <p class="golden">LACONTRE FS</p>
+    <p>10 rue Ducassou</p>
+    <p>33310 Lormont</p>
+    <p>FRANCE</p>
+  </div>
+
+  <div id="message">
+    <p>Contactez-nous du lundi au vendredi de 8h00 à 12h</p>
+    <p>et de 14h à 17h30 au + 33 (0)6 00 00 00 00</p>
+    <p><br></p>
+    <p>ou par e-mail à info@champagne-demonge.fr</p>
+  </div>
+</section>
+
+
+
+
+
+
+<%= render 'shared/mentions-legales' %>

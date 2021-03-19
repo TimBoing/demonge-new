@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 
 #logo-container{
-  height: 35vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,7 @@
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 10;
 
   height: 10vh;
   display: flex;
@@ -72,7 +73,8 @@ section{
   display: flex;
   justify-content: space-around;
 
-  margin: 10vh 0;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
 
   .section-text{
     width: 50%;
@@ -91,7 +93,7 @@ section{
 
   .section-picture-container{
     width: 50%;
-    padding: 0 5%;
+    padding: 2em 5%;
 
     .section-picture{
       height: 100%;
