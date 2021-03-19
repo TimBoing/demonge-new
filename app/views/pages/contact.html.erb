@@ -14,3 +14,14 @@
     <div class="golden-div"></div>
   <% end %>
 </div>
+
+
+<%= simple_form_for @site_contact do |f| %>
+  <%= f.input :name, label: false, placeholder: "Nom" %>
+  <%= f.input :address, label: false, placeholder: "Adresse" %>
+  <%= f.input :email, label: false, placeholder: "Email" %>
+  <%= f.input :tel, label: false, placeholder: "Téléphone" %>
+  <%= f.input :subject, label: false, placeholder: "Objet" %>
+  <%= f.input :message, as: :text, label: false, placeholder: "Message" %>
+  <%= f.button :submit, "Envoyer", class: "btn-dark" %>
+<% end %>

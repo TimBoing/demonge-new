@@ -8,6 +8,8 @@ class PagesController < ApplicationController
   end
 
   def contact
+    # ContactMailer.new_contact.deliver_now
+    @site_contact = SiteContact.new
   end
 
 end
