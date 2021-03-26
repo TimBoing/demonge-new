@@ -1,0 +1,15 @@
+.grey-div-test{
+  background-color: $gray;
+  height: 20vh;
+  width: 100%;
+
+}
+
+.image-div-test{
+  height: 40vh;
+  width: 100%;
+  background-image: url(image_path("landscape1.jpg"));
+  background-repeat: no-repeat, repeat;
+  background-position: 50% 50%;
+  // background-size: 100vh;
+}

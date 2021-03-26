@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :champagnes, :contact ]
+  skip_before_action :authenticate_user!, only: [ :home, :champagnes, :contact, :test ]
 
   def home
   end
@@ -10,6 +10,9 @@ class PagesController < ApplicationController
   def contact
     # ContactMailer.new_contact.deliver_now
     @site_contact = SiteContact.new
+  end
+
+  def test
   end
 
 end
