@@ -124,8 +124,8 @@
       padding: 5%;
       display: flex;
       flex-direction: column;
-      // justify-content: center;
-      // align-items: center;
+      justify-content: center;
+      align-items: center;
       background-color: white;
       padding: 20px;
       // border: 1px solid $golden;
@@ -146,7 +146,7 @@
       }
 
       p{
-        // text-align: center;
+        text-align: center;
         font-size: 0.8em;
         margin: 1em 0;
         width: 100%;
@@ -170,10 +170,10 @@
       }
 
       &.left{
-        align-items: flex-end;
+        // align-items: flex-end;
 
         p{
-          text-align: right;
+          // text-align: right;
         }
       }
 

@@ -14,6 +14,8 @@ const switchIndexes = () => {
 
   let position = "brut";
 
+
+
   const switchIndexes = () => {
 
 
@@ -50,6 +52,12 @@ const switchIndexes = () => {
     }
   }
 
+  window.addEventListener("resize", (e)=> {
+    brutOff = brutSection.offsetTop;
+    roseOff = roseSection.offsetTop;
+    blancOff = blancSection.offsetTop;
+
+  });
 
   window.addEventListener('scroll', (e) => {
 
@@ -66,6 +74,8 @@ const switchIndexes = () => {
       switchIndexes();
     }
   });
+
+    switchIndexes();
 }
 
 export{switchIndexes};
