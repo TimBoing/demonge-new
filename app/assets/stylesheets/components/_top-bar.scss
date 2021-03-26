@@ -1,0 +1,100 @@
+// Until tablets
+@media (max-width: 992px){
+  #top-bar{
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    width: 100vw;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+
+    #main-logo{
+      height: 8vh;
+      transition: all 1s;
+
+      // &:hover{
+      //   transform: rotate(-40deg);
+      // }
+    }
+
+    #burger-menu{
+      position: absolute;
+      left: 20px;
+    }
+  }
+
+  #links-container{
+    display: none;
+
+  }
+
+}
+
+
+// Normal css for large screens
+@media (min-width: 992px){
+
+  #top-bar{
+    height: 20vh;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    #main-logo{
+      height: 15vh;
+      transition: all 1s;
+
+      // &:hover{
+      //   transform: rotate(-360deg);
+      // }
+    }
+  }
+
+  #links-container{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+
+    a{
+      color: black;
+      font-size: 15px;
+      margin: 15px;
+      text-decoration: none;
+      font-size: bold;
+      position: relative;
+
+      &.active{
+        // color: red;
+
+        #red-div{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+  #red-div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: red;
+    transition: all 1s;
+  }
+
+  #burger-menu{
+    display: none;
+  }
+
+}
+
+

@@ -25,10 +25,12 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { mainButtons } from '../components/mainButtons';
 import { initMapbox } from '../plugins/init_mapbox';
+import { sideNav } from '../components/sideNav';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   mainButtons();
   initMapbox();
+  // sideNav();
 });
