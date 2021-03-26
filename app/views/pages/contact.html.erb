@@ -34,22 +34,31 @@
       <% end %>
     </div>
 
+    <div class="map-container" id="map-container">
+           <div
+            id="map"
+            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+            data-image-url="<%= asset_url("logo.png") %>"
+          >
+      </div>
+    </div>
+
 
   </div>
 
 </section>
 
-
+<!--
 <div id ="section-map-container">
   <div class="map-container" id="map-container">
          <div
           id="map"
-          data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-          data-image-url="<%= asset_url("logo.png") %>"
+          data-mapbox-api-key="<%#= ENV['MAPBOX_API_KEY'] %>"
+          data-image-url="<%#= asset_url("logo.png") %>"
         >
     </div>
   </div>
-</div>
+</div> -->
 
 <section id="contact-info-section">
 
