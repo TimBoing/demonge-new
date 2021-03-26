@@ -33,6 +33,6 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   mainButtons();
   initMapbox();
-  manualScroll();
+  // manualScroll();
   // sideNav();
 });

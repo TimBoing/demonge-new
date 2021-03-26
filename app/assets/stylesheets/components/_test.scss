@@ -8,8 +8,24 @@
 .image-div-test{
   height: 40vh;
   width: 100%;
-  background-image: url(image_path("landscape1.jpg"));
-  background-repeat: no-repeat, repeat;
-  background-position: 50% 50%;
+  // background-image: url(image_path("landscape1.jpg"));
+  // background-repeat: no-repeat, repeat;
+  // background-position: 50% 50%;
   // background-size: 100vh;
+
+  &:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(image_path("landscape1.jpg")) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 }
