@@ -26,13 +26,14 @@ import "bootstrap";
 import { mainButtons } from '../components/mainButtons';
 import { initMapbox } from '../plugins/init_mapbox';
 import { sideNav } from '../components/sideNav';
-import { manualScroll } from '../components/manualScroll';
+import { switchIndexes } from '../components/switchIndexes';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   mainButtons();
   initMapbox();
+  switchIndexes();
   // manualScroll();
   // sideNav();
 });
