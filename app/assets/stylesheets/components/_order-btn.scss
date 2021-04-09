@@ -1,0 +1,23 @@
+@media (max-width: 992px){}
+@media (min-width: 992px){}
+
+.order-btn{
+  border: 1px solid $golden;
+  color: $golden;
+  padding: 20px;
+  margin-top: 2em;
+  width: 80%;
+  text-align: center;
+  font-weight: lighter;
+  max-width: 300px;
+  text-decoration: none;
+  transition: all 0.5s;
+
+  &:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    background-color: $golden;
+    color: white;
+    text-decoration: none;
+  }
+}
