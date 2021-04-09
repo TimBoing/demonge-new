@@ -14,11 +14,9 @@ const switchIndexesHome = () => {
   let famOff = familySection.offsetTop;
   let champOff = champagneSection.offsetTop;
 
-  console.log(champOff);
   let position = "land";
 
   const switchIndexes = () => {
-    console.log(position);
     switch (position) {
       case "land":
         mobileDiv.style.height = "50vh";
