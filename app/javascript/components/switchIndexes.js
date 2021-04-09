@@ -52,12 +52,12 @@ const switchIndexes = () => {
   }
 
   // Besoin de ca pour savoir où je suis
-  // window.addEventListener("resize", (e)=> {
-  //   brutOff = brutSection.offsetTop;
-  //   roseOff = roseSection.offsetTop;
-  //   blancOff = blancSection.offsetTop;
+  window.addEventListener("resize", (e)=> {
+    brutOff = brutSection.offsetTop;
+    roseOff = roseSection.offsetTop;
+    blancOff = blancSection.offsetTop;
 
-  // });
+  });
 
   window.addEventListener('scroll', (e) => {
 
