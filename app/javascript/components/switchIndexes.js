@@ -4,15 +4,16 @@ import blanc_src from '../../assets/images/blanc_transp.png'
 
 const switchIndexes = () => {
 
-  const brutSection = document.querySelector("#brut-section .bottle-description");
+  const brutSection = document.querySelector("#brut-section");
 
   if(!brutSection) return;
   console.log("doing it");
-  const roseSection = document.querySelector("#rose-section .bottle-description");
-  const blancSection = document.querySelector("#blanc-section .bottle-description");
+  const roseSection = document.querySelector("#rose-section");
+  const blancSection = document.querySelector("#blanc-section");
 
   const bImages = document.querySelectorAll(".bottle-image");
 
+  let navBarOffset = window.innerHeight / 10;
   let brutOff = brutSection.offsetTop;
   let roseOff = roseSection.offsetTop;
   let blancOff = blancSection.offsetTop;
@@ -26,49 +27,31 @@ const switchIndexes = () => {
     switch (position) {
       case "brut":
         mobileDiv.style.backgroundImage = `url(${brut_src})`;
-        // bImages.forEach((im) => {
-        //   if(im == bImages[0] ){
-        //     im.classList.add("active")
-        //   }else{
-        //     im.classList.remove("active");
-        //   }
-        // });
+
         break;
       case "rose":
         mobileDiv.style.backgroundImage = `url(${rose_src})`;
-        // bImages.forEach((im) => {
-        //   if(im == bImages[1] ){
-        //     im.classList.add("active")
-        //   }else{
-        //     im.classList.remove("active");
-        //   }
-        // });
 
         break;
       case "blanc":
         mobileDiv.style.backgroundImage = `url(${blanc_src})`;
-        // bImages.forEach((im) => {
-        //   if(im == bImages[2] ){
-        //     im.classList.add("active")
-        //   }else{
-        //     im.classList.remove("active");
-        //   }
-        // });
         break;
     }
   }
 
   // Besoin de ca pour savoir où je suis
   window.addEventListener("resize", (e)=> {
+    navBarOffset = window.innerHeight / 10;
     brutOff = brutSection.offsetTop;
     roseOff = roseSection.offsetTop;
     blancOff = blancSection.offsetTop;
+
 
   });
 
   window.addEventListener('scroll', (e) => {
 
-    let scrollLevel = window.scrollY;
+    let scrollLevel = window.scrollY + navBarOffset;
 
     if(scrollLevel >= 0 && scrollLevel < brutOff){
       position = "brut";

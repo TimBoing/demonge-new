@@ -1,0 +1,23 @@
+@media (max-width: 992px){
+
+  #main-image-carousel{
+    height: 50vh;
+    background-image: url(image_path("landscape1.jpg"));
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: 992px){
+  #main-image-carousel{
+    height: 50vh;
+    background-image: url(image_path("landscape1.jpg"));
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,41 @@
+@media (max-width: 992px){
+  section{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+
+    &.gray{
+      background-color: $light-gray;
+    }
+
+    &.reverse-on-mobile{
+      flex-flow: column-reverse;
+    }
+
+
+    &.not-on-mobile{
+      background-color: transparent;
+    }
+  }
+}
+
+@media (min-width: 992px){
+
+  section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+
+    &.gray{
+      background-color: $light-gray;
+    }
+
+  }
+
+}

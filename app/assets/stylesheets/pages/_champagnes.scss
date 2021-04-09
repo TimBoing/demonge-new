@@ -1,0 +1,140 @@
+@media (max-width: 992px){
+
+  .bottle-description{
+    width: 100%;
+    height: 90vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+
+    .title{
+      color: $golden;
+      font-size: 2em;
+      margin-bottom: 1em ;
+
+    }
+
+    h4{
+      font-size: 0.8em;
+      font-weight: bold;
+      margin: 1em 0;
+    }
+
+    p{
+      text-align: center;
+      font-size: 0.8em;
+      margin: 1em 0;
+      width: 100%;
+
+      &.surrounded{
+        width: 50%;
+        text-align: center;
+        border-bottom: 1px solid $golden;
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+
+        span{
+          background:#fff;
+          padding:0 2em;
+
+          &.gray{
+            background: $light-gray;
+          }
+        }
+      }
+    }
+
+    &.left{
+      p{}
+    }
+
+    &.right{}
+  }
+
+  .bottle-image{
+    display: none;
+
+    &.brut{}
+
+    &.rose{}
+
+    &.blanc{}
+  }
+
+
+}
+
+@media (min-width: 992px){
+
+  .bottle-description{
+    width: 60%;
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .title{
+      color: $golden;
+      font-size: 3em;
+      margin-bottom: 1em ;
+
+    }
+
+    h4{
+    }
+
+    p{
+      text-align: center;
+      margin: 1em 0;
+
+      &.surrounded{
+        width: 50%;
+        text-align: center;
+        border-bottom: 1px solid $golden;
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+
+        span{
+          background:#fff;
+          padding:0 2em;
+
+          &.gray{
+            background: $light-gray;
+          }
+        }
+      }
+    }
+
+    &.left{}
+
+    &.right{}
+  }
+
+  .bottle-image{
+    width: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-attachment: fixed;
+    background-size: contain;
+
+    &.brut{
+      background-image: url(image_path("brut_transp.png"));
+
+    }
+
+    &.rose{
+      background-image: url(image_path("rose_transp.png"));
+    }
+
+    &.blanc{
+      background-image: url(image_path("blanc_transp.png"));
+    }
+  }
+
+}
