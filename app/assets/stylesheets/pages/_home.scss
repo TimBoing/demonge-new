@@ -65,7 +65,7 @@
   #main-image-carousel{
     height: 50vh;
     background-image: url(image_path("landscape1.jpg"));
-    // background-image: url(image_path("rose.png"));
+    // background-image: url(image_path("rose_transp.png"));
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-attachment: fixed;
@@ -207,7 +207,7 @@
           width: 100%;
           height: 100%;
           z-index: -10;
-          background-image: url(image_path("brut.png"));
+          background-image: url(image_path("brut_transp.png"));
           background-repeat: no-repeat;
           background-position: center;
           -webkit-background-size: cover;
@@ -238,7 +238,7 @@
           width: 100%;
           height: 100%;
           z-index: -10;
-          background-image: url(image_path("rose.png"));
+          background-image: url(image_path("rose_transp.png"));
           background-repeat: no-repeat;
           background-position: center;
           -webkit-background-size: cover;
@@ -269,7 +269,7 @@
           width: 100%;
           height: 100%;
           z-index: -10;
-          background-image: url(image_path("brut.png"));
+          background-image: url(image_path("blanc_transp.png"));
           background-position: center;
           background-position: center;
           -webkit-background-size: cover;
@@ -400,7 +400,7 @@
   #main-image-carousel{
     height: 50vh;
     background-image: url(image_path("landscape1.jpg"));
-    // background-image: url(image_path("rose.png"));
+    // background-image: url(image_path("rose_transp.png"));
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-attachment: fixed;
@@ -508,16 +508,16 @@
       background-size: contain;
 
       &.brut{
-        background-image: url(image_path("brut.png"));
+        background-image: url(image_path("brut_transp.png"));
 
       }
 
       &.rose{
-        background-image: url(image_path("rose.png"));
+        background-image: url(image_path("rose_transp.png"));
       }
 
       &.blanc{
-        background-image: url(image_path("brut.png"));
+        background-image: url(image_path("blanc_transp.png"));
       }
     }
 
