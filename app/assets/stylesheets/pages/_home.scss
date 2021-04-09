@@ -197,97 +197,94 @@
 
       &.brut{
 
-        &:before {
-          background-color: $light-gray;
-          content: "";
-          display: block;
-          position: fixed;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -10;
-          background-image: url(image_path("brut_transp.png"));
-          background-repeat: no-repeat;
-          background-position: center;
-          // -webkit-background-size: contain;
-          // -moz-background-size: contain;
-          // -o-background-size: contain;
-          // background-size: contain;
-          background-size: 600px;
-        }
+        // &:before {
+        //   background-color: $light-gray;
+        //   content: "";
+        //   display: block;
+        //   position: fixed;
+        //   left: 0;
+        //   top: 0;
+        //   width: 100%;
+        //   height: 100%;
+        //   z-index: -10;
+        //   background-image: url(image_path("brut_transp.png"));
+        //   background-repeat: no-repeat;
+        //   background-position: center;
+        //   -webkit-background-size: contain;
+        //   -moz-background-size: contain;
+        //   -o-background-size: contain;
+        //   background-size: contain;
+        // }
 
-        &.active{
+        // &.active{
 
-          &:before {
-            z-index: -9;
-          }
+        //   &:before {
+        //     z-index: -9;
+        //   }
 
-        }
+        // }
 
 
       }
 
       &.rose{
-        &:before {
-          background-color: $light-gray;
-          content: "";
-          display: block;
-          position: fixed;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -10;
-          background-image: url(image_path("rose_transp.png"));
-          background-repeat: no-repeat;
-          background-position: center;
-          // -webkit-background-size: contain;
-          // -moz-background-size: contain;
-          // -o-background-size: contain;
-          // background-size: contain;
-          background-size: 600px;
-        }
+        // &:before {
+        //   background-color: $light-gray;
+        //   content: "";
+        //   display: block;
+        //   position: fixed;
+        //   left: 0;
+        //   top: 0;
+        //   width: 100%;
+        //   height: 100%;
+        //   z-index: -10;
+        //   background-image: url(image_path("rose_transp.png"));
+        //   background-repeat: no-repeat;
+        //   background-position: center;
+        //   -webkit-background-size: contain;
+        //   -moz-background-size: contain;
+        //   -o-background-size: contain;
+        //   background-size: contain;
+        // }
 
-        &.active{
+        // &.active{
 
-          &:before {
-            z-index: -9;
-          }
+        //   &:before {
+        //     z-index: -9;
+        //   }
 
-        }
+        // }
 
       }
 
       &.blanc{
 
-        &:before {
-          background-color: $light-gray;
-          content: "";
-          display: block;
-          position: fixed;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -10;
-          background-image: url(image_path("blanc_transp.png"));
-          background-repeat: no-repeat;
-          background-position: center;
-          // -webkit-background-size: contain;
-          // -moz-background-size: contain;
-          // -o-background-size: contain;
-          // background-size: contain;
-          background-size: 600px;
-        }
+        // &:before {
+        //   background-color: $light-gray;
+        //   content: "";
+        //   display: block;
+        //   position: fixed;
+        //   left: 0;
+        //   top: 0;
+        //   width: 100%;
+        //   height: 100%;
+        //   z-index: -10;
+        //   background-image: url(image_path("blanc_transp.png"));
+        //   background-repeat: no-repeat;
+        //   background-position: center;
+        //   -webkit-background-size: contain;
+        //   -moz-background-size: contain;
+        //   -o-background-size: contain;
+        //   background-size: contain;
+        // }
 
-        &.active{
+        // &.active{
 
-          &:before {
-            z-index: -9;
-          }
+        //   &:before {
+        //     z-index: -9;
+        //   }
 
-        }
+        // }
 
       }
     }

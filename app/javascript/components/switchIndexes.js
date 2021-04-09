@@ -1,3 +1,7 @@
+import brut_src from '../../assets/images/brut_transp.png'
+import rose_src from '../../assets/images/rose_transp.png'
+import blanc_src from '../../assets/images/blanc_transp.png'
+
 const switchIndexes = () => {
 
   const brutSection = document.querySelector("#brut-section .bottle-description");
@@ -15,38 +19,41 @@ const switchIndexes = () => {
 
   let position = "brut";
 
-
+  const mobileDiv = document.querySelector("#mobile-div-champagnes");
 
   const switchIndexes = () => {
 
     switch (position) {
       case "brut":
-        bImages.forEach((im) => {
-          if(im == bImages[0] ){
-            im.classList.add("active")
-          }else{
-            im.classList.remove("active");
-          }
-        });
+        mobileDiv.style.backgroundImage = `url(${brut_src})`;
+        // bImages.forEach((im) => {
+        //   if(im == bImages[0] ){
+        //     im.classList.add("active")
+        //   }else{
+        //     im.classList.remove("active");
+        //   }
+        // });
         break;
       case "rose":
-        bImages.forEach((im) => {
-          if(im == bImages[1] ){
-            im.classList.add("active")
-          }else{
-            im.classList.remove("active");
-          }
-        });
+        mobileDiv.style.backgroundImage = `url(${rose_src})`;
+        // bImages.forEach((im) => {
+        //   if(im == bImages[1] ){
+        //     im.classList.add("active")
+        //   }else{
+        //     im.classList.remove("active");
+        //   }
+        // });
 
         break;
       case "blanc":
-        bImages.forEach((im) => {
-          if(im == bImages[2] ){
-            im.classList.add("active")
-          }else{
-            im.classList.remove("active");
-          }
-        });
+        mobileDiv.style.backgroundImage = `url(${blanc_src})`;
+        // bImages.forEach((im) => {
+        //   if(im == bImages[2] ){
+        //     im.classList.add("active")
+        //   }else{
+        //     im.classList.remove("active");
+        //   }
+        // });
         break;
     }
   }
