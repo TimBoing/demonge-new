@@ -26,14 +26,16 @@ import "bootstrap";
 import { mainButtons } from '../components/mainButtons';
 import { initMapbox } from '../plugins/init_mapbox';
 import { sideNav } from '../components/sideNav';
-import { switchIndexes } from '../components/switchIndexes';
+import { switchIndexesChampagnes } from '../components/switchIndexesChampagnes';
+import { switchIndexesHome } from '../components/switchIndexesHome';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   mainButtons();
   initMapbox();
-  switchIndexes();
+  switchIndexesChampagnes();
+  switchIndexesHome();
   // manualScroll();
   // sideNav();
 });

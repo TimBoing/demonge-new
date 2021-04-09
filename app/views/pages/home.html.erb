@@ -16,11 +16,12 @@
   <% end %>
 </div>
 
-<div id="main-image-carousel">
-</div>
+<div id="mobile-div-home"></div>
+
+<div id="main-image-carousel"></div>
 
 
-<section>
+<section id="family-section">
   <div class="section-text">
     <div class="title">UNE HISTOIRE DE FAMILLE</div>
     <p>Champagne Demonge, c’est d’abord l’histoire d’une famille qui, depuis quatre générations, n’a eu de cesse de promouvoir et commercialiser des produits français à travers le monde.</p>
@@ -31,13 +32,15 @@
     <p>L’histoire se poursuit aujourd’hui avec la quatrième génération de Lacontre qui perpétue avec la même expertise, la promotion et la distribution du Champagne Demonge, de vins et de spiritueux, auprès d’une clientèle toujours en quête de qualité.</p>
   </div>
   <div class="section-picture-container">
-    <div class="section-picture" style="background-image: url(<%= asset_path 'lake.jpg' %>)"></div>
+    <div class="section-picture lake"></div>
   </div>
 </section>
 
-<section class="reverse-on-mobile">
+<div class="mobile-div-home-intersection"></div>
+
+<section id="champagne-section" class="reverse-on-mobile">
   <div class="section-picture-container">
-    <div class="section-picture" style="background-image: url(<%= asset_path 'raisin.jpg' %>)"></div>
+    <div class="section-picture raisin"></div>
   </div>
   <div class="section-text">
     <div class="title">LE CHAMPAGNE</div>
@@ -56,6 +59,7 @@
   </div>
 </section>
 
+<div class="mobile-div-home-intersection"></div>
 
 <%= render 'shared/mentions-legales' %>
 

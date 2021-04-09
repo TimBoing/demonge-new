@@ -1,0 +1,34 @@
+@media (max-width: 992px){
+
+  #mobile-div-home{
+    position: sticky;
+    top:0;
+    width: 100%;
+    height: 50vh;
+    background-image: url(image_path("landscape1.jpg"));
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -8;
+    // background-color: $light-gray;
+    // transition: all 1s;
+  }
+
+  .mobile-div-home-intersection{
+    height: 50vh;
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width: 992px){
+  #mobile-div-home{
+    display: none;
+  }
+
+  .mobile-div-home-intersection{
+    display: none;
+  }
+
+}

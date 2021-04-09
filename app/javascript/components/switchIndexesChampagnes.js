@@ -2,25 +2,20 @@ import brut_src from '../../assets/images/brut_transp.png'
 import rose_src from '../../assets/images/rose_transp.png'
 import blanc_src from '../../assets/images/blanc_transp.png'
 
-const switchIndexes = () => {
+const switchIndexesChampagnes = () => {
 
+  const mobileDiv = document.querySelector("#mobile-div-champagnes");
+
+  if(!mobileDiv) return;
   const brutSection = document.querySelector("#brut-section");
-
-  if(!brutSection) return;
-  console.log("doing it");
   const roseSection = document.querySelector("#rose-section");
   const blancSection = document.querySelector("#blanc-section");
-
-  const bImages = document.querySelectorAll(".bottle-image");
 
   let navBarOffset = window.innerHeight / 10;
   let brutOff = brutSection.offsetTop;
   let roseOff = roseSection.offsetTop;
-  let blancOff = blancSection.offsetTop;
 
   let position = "brut";
-
-  const mobileDiv = document.querySelector("#mobile-div-champagnes");
 
   const switchIndexes = () => {
 
@@ -44,8 +39,6 @@ const switchIndexes = () => {
     navBarOffset = window.innerHeight / 10;
     brutOff = brutSection.offsetTop;
     roseOff = roseSection.offsetTop;
-    blancOff = blancSection.offsetTop;
-
 
   });
 
@@ -68,5 +61,5 @@ const switchIndexes = () => {
     switchIndexes();
 }
 
-export{switchIndexes};
+export{switchIndexesChampagnes};
 
