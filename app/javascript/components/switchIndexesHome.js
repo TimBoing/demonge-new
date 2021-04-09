@@ -55,7 +55,7 @@ const switchIndexesHome = () => {
     if(scrollLevel >= 0 && scrollLevel < famOff){
       position = "land";
       switchIndexes();
-    }else if(scrollLevel >= famOff && scrollLevel < champOff){
+    }else if(scrollLevel >= famOff + 10 && scrollLevel < champOff){
       position = "lake";
       switchIndexes();
     }else if(scrollLevel >= champOff){
