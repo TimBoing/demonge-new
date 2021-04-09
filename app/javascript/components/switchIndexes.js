@@ -3,6 +3,7 @@ const switchIndexes = () => {
   const brutSection = document.querySelector("#brut-section .bottle-description");
 
   if(!brutSection) return;
+  console.log("doing it");
   const roseSection = document.querySelector("#rose-section .bottle-description");
   const blancSection = document.querySelector("#blanc-section .bottle-description");
 
@@ -17,8 +18,6 @@ const switchIndexes = () => {
 
 
   const switchIndexes = () => {
-
-
 
     switch (position) {
       case "brut":
@@ -52,6 +51,7 @@ const switchIndexes = () => {
     }
   }
 
+  // Besoin de ca pour savoir où je suis
   window.addEventListener("resize", (e)=> {
     brutOff = brutSection.offsetTop;
     roseOff = roseSection.offsetTop;
@@ -79,3 +79,4 @@ const switchIndexes = () => {
 }
 
 export{switchIndexes};
+
