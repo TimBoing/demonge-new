@@ -15,6 +15,7 @@
       color: $golden;
       font-size: 2em;
       margin-bottom: 1em ;
+      font-family: "helvetica";
 
     }
 
@@ -22,6 +23,7 @@
       font-size: 0.8em;
       font-weight: bold;
       margin: 1em 0;
+      font-family: "helvetica";
     }
 
     p{
@@ -83,10 +85,13 @@
       color: $golden;
       font-size: 3em;
       margin-bottom: 1em ;
+      font-family: "helvetica";
 
     }
 
     h4{
+      margin-top: 1em;
+      font-family: "helvetica";
     }
 
     p{
