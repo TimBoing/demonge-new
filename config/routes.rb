@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get '/champagnes', to: 'pages#champagnes'
   get '/contact', to: 'pages#contact'
   resources :site_contacts, only: [:create]
+  resources :first_visits, only: [:create]
 
   get 'test', to: 'pages#test'
+  post 'update_cookies', to: 'first_visits#update_cookies'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

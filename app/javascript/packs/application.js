@@ -27,6 +27,7 @@ import { mainButtons } from '../components/mainButtons';
 import { initMapbox } from '../plugins/init_mapbox';
 import { sideNav } from '../components/sideNav';
 import { switchIndexesChampagnes } from '../components/switchIndexesChampagnes';
+import { firstVisit } from '../components/firstVisit';
 // import { switchIndexesHome } from '../components/switchIndexesHome';
 
 document.addEventListener('turbolinks:load', () => {
@@ -35,6 +36,7 @@ document.addEventListener('turbolinks:load', () => {
   mainButtons();
   initMapbox();
   switchIndexesChampagnes();
+  firstVisit();
   // switchIndexesHome();
   // manualScroll();
   // sideNav();

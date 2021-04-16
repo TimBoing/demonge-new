@@ -1,0 +1,94 @@
+#first-visit-modal{
+  display: none;
+  transition: all 1s;
+
+  &.active{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.8);
+
+    #first-visit-modal-content{
+
+      position: relative;
+      overflow: hidden;
+
+      // width: 50%;
+      max-width: 600px;
+      background-color: white;
+      box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      padding: 30px 40px;
+
+      transition: all 0.5s;
+
+      #bienvenue{
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-weight: lighter;
+
+
+      }
+
+      img{
+        width: 100%;
+      }
+
+      p{
+        font-weight: lighter;
+        width: 100%;
+        text-align: justify;
+
+      }
+
+      #button-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .order-btn{
+          width: 45%;
+        }
+
+        #cancel-btn{
+          // transform: scale(0.9);
+
+        }
+        #enter-btn{
+          background-color: $golden;
+          color: white;
+          transition: all 0.5s;
+
+          &:hover{
+            transform: scale(1.3);
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+}

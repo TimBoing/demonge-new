@@ -1,5 +1,18 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home, :champagnes, :contact, :test ]
+  before_action :first_visit
+  # before_action :first_time_visit, unless: -> {cookies[:first_visit]}
+
+  def first_visit
+
+    # cookies.permanent[:age_legal] = true
+    # cookies.delete :age_legal
+    unless cookies[:age_legal]
+      @f_visit = "active"
+    end
+    # cookies.permanent[:first_visit] = 1
+
+  end
 
   def home
   end
