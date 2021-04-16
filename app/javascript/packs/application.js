@@ -8,6 +8,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
@@ -20,7 +21,6 @@ ActiveStorage.start()
 
 // External imports
 import "bootstrap";
-
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { mainButtons } from '../components/mainButtons';
@@ -28,6 +28,7 @@ import { initMapbox } from '../plugins/init_mapbox';
 import { sideNav } from '../components/sideNav';
 import { switchIndexesChampagnes } from '../components/switchIndexesChampagnes';
 import { firstVisit } from '../components/firstVisit';
+import { loadCookieBar } from '../utils/cookies';
 // import { switchIndexesHome } from '../components/switchIndexesHome';
 
 document.addEventListener('turbolinks:load', () => {
@@ -37,6 +38,7 @@ document.addEventListener('turbolinks:load', () => {
   initMapbox();
   switchIndexesChampagnes();
   firstVisit();
+  loadCookieBar();
   // switchIndexesHome();
   // manualScroll();
   // sideNav();

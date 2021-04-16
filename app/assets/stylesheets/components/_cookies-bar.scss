@@ -1,0 +1,55 @@
+.cookies-bar {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: rgba(0,0,0, 0.9);
+  z-index: 100;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+  overflow: hidden;
+
+  p{
+    width: 70%;
+    font-size: 0.8em;
+    margin: 0;
+    margin-right: 20px;
+    text-align: justify;
+  }
+
+  #accept-cookies {
+    margin: 0;
+
+    color: white;
+    background-color: #2bc137;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+
+    &:hover{
+      cursor: pointer;
+      transform: scale(0.9);
+
+    }
+  }
+
+}
+
+@media (max-width: 700px){
+
+  .cookies-bar {
+    flex-direction: column;
+
+    p{
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+
+
+@media (min-width: 992px){
+}

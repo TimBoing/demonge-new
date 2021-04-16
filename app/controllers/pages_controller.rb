@@ -7,7 +7,10 @@ class PagesController < ApplicationController
 
     # cookies.permanent[:age_legal] = true
     # cookies.delete :age_legal
-    unless cookies[:age_legal]
+    # puts cookies[:age_legal]
+    puts "yo----------------"
+    puts cookies[:age_legal]
+    unless cookies[:age_legal] == "true"
       @f_visit = "active"
     end
     # cookies.permanent[:first_visit] = 1
