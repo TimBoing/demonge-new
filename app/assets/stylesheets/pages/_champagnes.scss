@@ -74,7 +74,7 @@
 
   .bottle-description{
     width: 60%;
-    padding: 10% 0;
+    // padding: 10% 0; // removed after centered
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,12 +121,17 @@
     &.right{}
   }
 
+  .center-content-vertically{
+    align-items: center;
+  }
+
   .bottle-image{
     width: 30%;
     background-repeat: no-repeat;
     background-position: center;
     // background-attachment: fixed;
     background-size: contain;
+    height: 90vh; // pour qu´on puisse la voir entière
 
     &.brut{
       background-image: url(image_path("brut_transp.png"));
