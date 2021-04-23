@@ -29,6 +29,7 @@ import { sideNav } from '../components/sideNav';
 import { switchIndexesChampagnes } from '../components/switchIndexesChampagnes';
 import { firstVisit } from '../components/firstVisit';
 import { loadCookieBar } from '../utils/cookies';
+import { cookiesSettings } from '../components/cookiesSettings';
 // import { switchIndexesHome } from '../components/switchIndexesHome';
 
 document.addEventListener('turbolinks:load', () => {
@@ -39,6 +40,7 @@ document.addEventListener('turbolinks:load', () => {
   switchIndexesChampagnes();
   firstVisit();
   loadCookieBar();
+  cookiesSettings();
   // switchIndexesHome();
   // manualScroll();
   // sideNav();

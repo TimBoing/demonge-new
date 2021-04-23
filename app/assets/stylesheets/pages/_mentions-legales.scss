@@ -1,0 +1,27 @@
+.mentions-legales-et-politique-de-confidentialite{
+
+  padding: 5vh;
+  font-weight: lighter;
+  font-size: 0.8em;
+  text-align: justify;
+
+  h4{
+    color: $golden;
+    font-weight: lighter;
+    // margin-bottom: 1em;
+  }
+
+  h5{
+    font-weight: lighter;
+    margin: 2em 0;
+  }
+
+  p{
+
+  }
+
+  &.gray{
+    background: $light-gray;
+  }
+
+}

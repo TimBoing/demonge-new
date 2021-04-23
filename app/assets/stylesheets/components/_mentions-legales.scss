@@ -1,4 +1,23 @@
 
+#cookies-settings{
+  width:100%;
+  padding: 10px;
+  font-size: 0.8em;
+  color: rgba(0,0,0,0.7);
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+  p{
+    margin: 0 0 0 5px;
+  }
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
 
 @media (max-width: 992px){
   .mentions-legales{
@@ -6,9 +25,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 14vh;
     color: rgba(0,0,0,0.7);
     // margin-top: 5vh;
+
 
     p{
       font-size: 0.8em;
@@ -24,7 +44,17 @@
       }
 
     }
+
+    &:hover{
+      text-decoration: none;
+      color: rgba(0,0,0,0.7);
+
+    }
   }
+
+
+
+
 }
 
 
@@ -33,8 +63,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 9vh;
     color: rgba(0,0,0,0.7);
+
     p{
       width: 20%;
       text-align: center;
@@ -48,7 +79,15 @@
       }
 
     }
+
+    &:hover{
+      color: rgba(0,0,0,0.7);
+      text-decoration: none;
+    }
+
+
   }
+
 }
 
 

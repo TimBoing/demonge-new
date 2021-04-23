@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/champagnes', to: 'pages#champagnes'
   get '/contact', to: 'pages#contact'
+  get '/mentions_legales', to: 'pages#mentions_legales'
   resources :site_contacts, only: [:create]
   resources :first_visits, only: [:create]
 

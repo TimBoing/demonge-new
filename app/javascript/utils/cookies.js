@@ -22,34 +22,53 @@ class CookieBar {
     }
 
     this.cookiesBar.querySelector('#accept-cookies').addEventListener('click', () => this.allowCookies(true));
-
-
-    // this.cookiesBar.querySelector('#reject-cookies').addEventListener('click', () => this.allowCookies(false));
+    this.cookiesBar.querySelector('#reject-cookies').addEventListener('click', () => this.allowCookies(false));
   }
 
+
+
   appendGACode() {
-    console.log("je mets le code google analytics");
+    // console.log("je mets le code Google Analytics");
+    const ga = "console.log('bonjour');"
     // const ga = "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){" +
     //   "(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o)," +
     //   "m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)" +
     //   "})(window,document,'script','//www.google-analytics.com/analytics.js','ga');" +
     //   "ga('create', 'UA-XXXXX-Y', 'auto');" + "ga('send', 'pageview');";
 
-    // document.getElementsByTagName('head')[0].append('<script>' + ga + '</script>');
+    document.getElementById("ga-code").innerHTML =  ga ;
+  }
+
+  gaCodePresent(){
+    // console.log("Je regarde si le code Google Analytics est présent");
+    const gaCode = document.getElementById('ga-code');
+    // doit retourner true ou false selon la présence du code
+    return !gaCode.innerHTML == "";
+
+  }
+
+  removeGACode(){
+    // console.log("j´enlève le code google analytics");
+    document.getElementById('ga-code').innerHTML = "";
+
   }
 
   allowCookies(allow) {
     if (allow) {
 
       Cookies.set('allow_cookies', 'yes', {
-        expires: 365
+        expires: 180
       });
 
-      this.appendGACode();
+      if(!this.gaCodePresent()){this.appendGACode();}
+
     } else {
+
       Cookies.set('allow_cookies', 'no', {
-        expires: 365
+        expires: 180
       });
+
+      if(this.gaCodePresent()){this.removeGACode();}
     }
 
     this.cookiesBar.addEventListener('transitionend', (e) => this.cookiesBar.style.display = "none" );

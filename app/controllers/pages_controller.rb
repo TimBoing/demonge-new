@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :champagnes, :contact, :test ]
+  skip_before_action :authenticate_user!, only: [ :home, :champagnes, :contact, :test, :mentions_legales ]
   before_action :first_visit
   # before_action :first_time_visit, unless: -> {cookies[:first_visit]}
 
@@ -26,6 +26,9 @@ class PagesController < ApplicationController
   def contact
     # ContactMailer.new_contact.deliver_now
     @site_contact = SiteContact.new
+  end
+
+  def mentions_legales
   end
 
   def test
