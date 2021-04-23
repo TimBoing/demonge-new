@@ -27,7 +27,12 @@
         <%= f.input :tel, label: false, placeholder: "Téléphone" %>
         <%= f.input :subject, label: false, placeholder: "Objet" %>
         <%= f.input :message, as: :text, label: false, placeholder: "Message" %>
+        <div class="flex">
+          <%= f.input :accept_conf, label: false, label: false, default: "1" %>
+          <p>En soumettant ce formulaire, j'accepte que les informations saisies soient traitées par Champagne Demonge dans le cadre de ma demande de contact et de la relation commerciale qui peut en découler. <%= link_to "En savoir plus en consultant notre politique de confidentialité", mentions_legales_path  %></p>
+        </div>
         <%= f.button :submit, "Envoyer", class: "btn-dark" %>
+
       <% end %>
     </div>
 

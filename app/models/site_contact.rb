@@ -1,5 +1,7 @@
 class SiteContact < ApplicationRecord
 
+  validates :accept_conf, acceptance: true
+
   def new_contact(site_contact_id)
     site_contact = SiteContact.find(site_contact_id)
     @name = site_contact.name

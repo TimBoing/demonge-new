@@ -8,6 +8,7 @@ class CreateSiteContacts < ActiveRecord::Migration[6.1]
       t.string :tel
       t.string :subject
       t.string :message
+      t.boolean :accept_conf, default: true
 
       t.timestamps
     end
