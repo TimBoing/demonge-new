@@ -35,7 +35,11 @@
       background-position: center;
       // background-attachment: fixed;
       background-size: cover;
-      &.lake{background-image: url(image_path("lake.jpg"));}
+      &.lake{
+        background-image: url(image_path("bottle_fresh.jpeg"));
+        background-color: black;
+        background-size: contain;
+      }
       &.raisin{background-image: url(image_path("raisin.jpg"));}
     }
   }
@@ -71,11 +75,17 @@
       width: 100%;
       background-repeat: no-repeat;
       background-position: center;
-      background-attachment: fixed;
-      background-size: cover;
+      // background-attachment: fixed;
 
-      &.lake{background-image: url(image_path("lake.jpg"));}
-      &.raisin{background-image: url(image_path("raisin.jpg"));}
+
+      &.lake{
+        background-size: contain;
+        background-image: url(image_path("bottle_fresh.jpeg"));
+      }
+      &.raisin{
+        background-size: cover;
+        background-image: url(image_path("raisin.jpg"));
+      }
     }
   }
 }
