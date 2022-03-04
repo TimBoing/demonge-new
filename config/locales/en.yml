@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+  pages:
+    home:
+      story: "OUR STORY"
