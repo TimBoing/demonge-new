@@ -33,6 +33,8 @@
       Dégustez-les dans les deux années de votre achat à une température maximale de 6 à 8° C.
     </p>
     <%= link_to "COMMANDER", contact_path, class:"order-btn"  %>
+
+    <%= link_to "Télécharger la fiche technique", new_download_path(champagne: "BRUT", format: :pdf), class: "download-link"  %>
   </div>
 </section>
 
@@ -54,6 +56,7 @@
       Dégustez-les dans les deux années de votre achat à une température maximale de 6 à 8° C.
     </p>
     <%= link_to "COMMANDER", contact_path, class:"order-btn"  %>
+    <%= link_to "Télécharger la fiche technique", new_download_path(champagne: "ROSE", format: :pdf), class: "download-link"  %>
   </div>
   <div class="bottle-image rose" ></div>
 </section>
@@ -77,6 +80,7 @@
       Dégustez-les dans les deux années de votre achat à une température maximale de 6 à 8° C.
     </p>
     <%= link_to "COMMANDER", contact_path, class:"order-btn" %>
+    <%= link_to "Télécharger la fiche technique", new_download_path(champagne: "BLANC_DE_BLANCS", format: :pdf), class: "download-link"  %>
   </div>
 </section>
 

@@ -1,0 +1,9 @@
+.download-link {
+  margin-top : 20px;
+  color: $golden;
+  text-decoration: underline;
+
+  &:hover{
+    color: $golden;
+  }
+}
